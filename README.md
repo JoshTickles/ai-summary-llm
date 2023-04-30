@@ -1,3 +1,22 @@
+## Introduction
+This is a test project for playing with LLMs to provide text summaries. It's a simple project using transformers. 
+
+You can use either your GPU, or your CPU. Right now I've only got Nvidia devices, so this is tested on that. 
+
+##### Tested options for your LLMs
+- distilbart-cnn-12-6
+    - supports truncation, max_length
+- bart-large-cnn
+    - does not supports truncation, max_length
+    - possible better results.
+
+##### devices
+- device=1, # to utilize GPU cuda:1
+- device=0, # to utilize GPU cuda:0
+- device=-1 # default value to utilize CPU
+
+## Setup 
+
 Create a Python virtual environment `venv`
 ```
 python3 -m venv venv
