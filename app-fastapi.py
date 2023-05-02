@@ -19,7 +19,7 @@ from pydantic import BaseModel
 llm_model = './model/distilbart-cnn-12-6'
 model = BartForConditionalGeneration.from_pretrained(llm_model)
 tokenizer = AutoTokenizer.from_pretrained(llm_model)
-device=0
+device=-1
 
 summarizer = pipeline(
     "summarization", 
